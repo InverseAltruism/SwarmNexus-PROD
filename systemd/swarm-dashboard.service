@@ -1,0 +1,17 @@
+[Unit]
+Description=Swarm Nexus - Dashboard (Flask via Gunicorn)
+After=network.target
+After=swarm-collector.service
+Wants=swarm-collector.service
+
+[Service]
+WorkingDirectory=/opt/swarmnexus/dashboard
+Environment=FLASK_ENV=production
+ExecStart=/opt/swarmnexus/dashboard/.venv/bin/gunicorn -w 3 -b 0.0.0.0:3010 app:app
+Restart=always
+RestartSec=5
+User=www-data
+Group=swarm
+
+[Install]
+WantedBy=multi-user.target

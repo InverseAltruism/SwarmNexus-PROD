@@ -1,0 +1,15 @@
+[Unit]
+Description=Swarm Nexus - Twitter Collector
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/swarmnexus/collector
+User=www-data
+Group=swarm
+EnvironmentFile=/opt/swarmnexus/collector/.env
+ExecStart=/usr/bin/node src/collector.js
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

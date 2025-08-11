@@ -1,0 +1,31 @@
+# Secrets / runtime
+.env
+*.db
+*.db-shm
+*.db-wal
+twitter-cookies.json
+*cookie*.json
+cookies.json
+data/
+cache/
+*.log
+
+# Puppeteer / Chrome caches
+**/.cache/
+**/puppeteer/
+**/chrome/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+env/
+venv/
+
+# OS cruft
+.DS_Store
+Thumbs.db
