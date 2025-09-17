@@ -1,0 +1,13 @@
+{
+	"dependencies": {
+		"@auth/prisma-adapter": "^2.10.0",
+		"@prisma/client": "^6.16.2",
+		"@rainbow-me/rainbowkit": "^2.2.8",
+		"next-auth": "^4.24.11",
+		"prisma": "^6.16.2",
+		"siwe": "^3.0.0",
+		"viem": "^2.37.6",
+		"wagmi": "^2.16.9",
+		"zod": "^4.1.9"
+	}
+}
