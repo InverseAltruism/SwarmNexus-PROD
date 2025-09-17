@@ -29,3 +29,5 @@ venv/
 # OS cruft
 .DS_Store
 Thumbs.db
+dashboard_snapshot_*.tgz
+dashboard.broken.*
