@@ -31,18 +31,3 @@ venv/
 Thumbs.db
 dashboard_snapshot_*.tgz
 dashboard.broken.*
-# backups and local archives
-backups/
-dashboard_ui_backup_*
-dashboard_snapshot_*
-*.tgz
-*.tar
-*.zip
-*.gz
-
-# local stuff
-data/
-node_modules/
-__pycache__/
-*.db
-*.sqlite
