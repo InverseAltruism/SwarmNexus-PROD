@@ -1,0 +1,14 @@
+{
+  "name": "SwarmNexus",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "20" },
+    "ghcr.io/devcontainers/features/python:1": { "version": "3.11" }
+  },
+  "postCreateCommand": "git submodule update --init --recursive && npm i -g pnpm && pnpm -w install && python -m pip install -r dashboard/requirements.txt && python scripts/init_db.py",
+  "forwardPorts": [3010, 3011],
+  "portsAttributes": {
+    "3010": {"label":"Dashboard"},
+    "3011": {"label":"Agent"}
+  }
+}
