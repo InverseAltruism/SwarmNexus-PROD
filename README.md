@@ -5,7 +5,7 @@
 # Swarm Nexus
 where the swarm converges, patterns emerge. From secrets to prophecy.
 
-This document describes the Swarm Nexus production system exactly as deployed today: what runs, where it runs, how the components interact, and how we operate and maintain it. This is an internal runbook and system overview, not an external installation guide.
+Swarm Nexus production system as deployed today: what runs, where it runs, how the components interact, and how we operate and maintain it. This is a runbook and system overview.
 
 ---
 
@@ -73,7 +73,7 @@ flowchart LR
 ## 3) Data Flow (end-to-end)
 
 1) Collector
-   - Logs into X using cookies for @swarmnexus (sacrificial scraping account recommended).
+   - Logs into X using cookies (sacrificial scraping account recommended).
    - Source: notifications (production), polling every 60s, cap 80 mentions/cycle.
    - Fully hydrates threads, extracts $TICKERs, parses call metadata.
    - Upserts into SQLite:
