@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/InverseAltruism/SwarmNexus-Dashboard/blob/main/static/SwarmNexusTransparent.png?raw=1" alt="Swarm Nexus" width="360" />
+  <img src="https://github.com/InverseAltruism/SwarmNexus-PROD/blob/main/SwarmNexusTransparent.png?raw=1" alt="Swarm Nexus" width="360" />
 </p>
 
 # Swarm Nexus
