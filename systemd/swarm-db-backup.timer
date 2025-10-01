@@ -1,0 +1,12 @@
+[Unit]
+Description=Run SQLite backup every ~2 days with retention
+
+[Timer]
+# Run ~every 2 days from the last activation; survives reboots
+OnUnitActiveSec=2d
+RandomizedDelaySec=1h
+Persistent=true
+Unit=swarm-db-backup.service
+
+[Install]
+WantedBy=timers.target

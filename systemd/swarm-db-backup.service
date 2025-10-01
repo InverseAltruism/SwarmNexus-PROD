@@ -1,0 +1,14 @@
+[Unit]
+Description=Swarm Nexus - SQLite daily backup (oneshot)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/env bash /opt/swarmnexus/scripts/db_backup.sh
+User=root
+Group=swarm
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
+
+[Install]
+WantedBy=multi-user.target
