@@ -1,0 +1,3 @@
+submodule dashboard: https://github.com/InverseAltruism/dashboard.git
+submodule collector: https://github.com/InverseAltruism/collector.git
+submodule agent: https://github.com/InverseAltruism/agent.git
