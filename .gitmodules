@@ -10,3 +10,7 @@
 	path = agent
 	url = git@github.com:InverseAltruism/SwarmNexus-Agent.git
 	branch = main
+[submodule "knowledge"]
+	path = knowledge
+	url = git@github.com:InverseAltruism/SwarmNexus-Knowledge.git
+	branch = main
