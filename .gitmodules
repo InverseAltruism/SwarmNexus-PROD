@@ -1,12 +1,12 @@
 [submodule "collector"]
-	path = collector
-	url = git@github.com:InverseAltruism/SwarmNexus-Collector.git
-	branch = main
+        path = collector
+        url = https://github.com/InverseAltruism/SwarmNexus-Collector.git
+        branch = main
 [submodule "dashboard"]
-	path = dashboard
-	url = git@github.com:InverseAltruism/SwarmNexus-Dashboard.git
-	branch = main
+        path = dashboard
+        url = https://github.com/InverseAltruism/SwarmNexus-Dashboard.git
+        branch = main
 [submodule "agent"]
-	path = agent
-	url = git@github.com:InverseAltruism/SwarmNexus-Agent.git
-	branch = main
+        path = agent
+        url = https://github.com/InverseAltruism/SwarmNexus-Agent.git
+        branch = main
